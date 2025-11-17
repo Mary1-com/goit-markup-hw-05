@@ -536,7 +536,7 @@ section {}
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    gap: 120px;
+    /* gap: 120px; */
 }
 
 .footer-content {
@@ -571,7 +571,7 @@ section {}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px
+    width: 264px
 }
 
 .footer-social-media {}
@@ -621,6 +621,79 @@ section {}
     fill: #F4F4FD;
 }
 
+
+.footer-subscribe {
+    width: 453px;
+    height: 80px;
+    margin-left: auto;
+}
+
+.footer-subscribe-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+   padding: 16px 0;
+}
+
+.footer-label {
+    
+    
+}
+
+.footer-form-email {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    padding: 8px 16px;
+    margin: 0;
+    color: #fff;
+}
+
+.footer-form-email::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.footer-btn-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #4d5ae5;
+    gap: 16px;
+    border-radius: 4px;
+    /* border: none; */
+    padding: 8px 24px;
+    width: 165px;
+    /* height: 40px; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+}
+
+
+.footer-subscribe-icon {
+    fill: #fff;
+}
 
 /* #endregion footer */
 
@@ -693,15 +766,13 @@ section {}
     fill: #2e2f42;
     border-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    /* margin-bottom: 24px; */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal:hover,
 .close-modal:focus {
     background-color: #404bbf;
     fill: #fff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon-close {
@@ -769,11 +840,6 @@ section {}
     width: 100%;
     height: 120px;
     padding: 8px 16px;
-    /* font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4); */
     resize: none;
     outline: none;
 
@@ -793,13 +859,15 @@ section {}
     color: #000;
 } 
 
-.policy-label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
-    margin-bottom: 4px;
+.policy-checkbox:checked
++.policy-lable
+>span {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #404bbf;
+    fill: #f4f4fd;
+    border: 1px solid #404BBF;
 }
 
 .custom-checkbox {
@@ -816,14 +884,17 @@ section {}
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* коли ти чекед - зайди в лейбл і там до спаму*/
-.policy-checkbox:checked
-+.policy-lable
->span {
-    background-color: #404bbf;
-    fill: #f4f4fd;
-    
+.policy-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
 }
+
+/* коли ти чекед - зайди в лейбл і там до спаму*/
+
 
 .policy-link {
     line-height: 1.33;

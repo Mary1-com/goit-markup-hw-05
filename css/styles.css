@@ -642,12 +642,7 @@ section {}
     justify-content: flex-start;
     align-items: center;
     gap: 24px;
-   padding: 16px 0;
-}
-
-.footer-label {
-    
-    
+    padding: 16px 0;
 }
 
 .footer-form-email {
@@ -660,6 +655,13 @@ section {}
     padding: 8px 16px;
     margin: 0;
     color: #fff;
+}
+
+.footer-form-email:hover,
+.footer-form-email:focus {
+    background-color: #31d0aa;
+    outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-email::placeholder {
@@ -678,21 +680,28 @@ section {}
     background-color: #4d5ae5;
     gap: 16px;
     border-radius: 4px;
-    /* border: none; */
     padding: 8px 24px;
     width: 165px;
-    /* height: 40px; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
+    border: 1px solid #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .footer-subscribe-icon {
     fill: #fff;
+}
+
+.footer-btn-subscribe:hover,
+.footer-btn-subscribe:focus {
+    background-color: #31d0aa;
+    border: 1px solid #31d0aa;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* #endregion footer */
@@ -721,6 +730,7 @@ section {}
     /* click */
     visibility: visible;
     pointer-events: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .backdrop:not(.is-open) .modal {
@@ -773,6 +783,7 @@ section {}
 .close-modal:focus {
     background-color: #404bbf;
     fill: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon-close {
@@ -882,6 +893,10 @@ section {}
     border: 1px solid rgba(46, 47, 66, 0.4);
     fill: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-field {
+    text-align: center;
 }
 
 .policy-label {

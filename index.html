@@ -476,9 +476,9 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <!-- <div>
                 <input type="useremail ">
-            </div>
+            </div> -->
         </div>  
     </footer>
     <!-- #endregion FOOTER-->
@@ -509,7 +509,7 @@
                             Name
                         </label>
                         <div class="field-wrapper">
-                            <input class="input-field" type="username" id="username" name="username">
+                            <input class="input-field" type="text" id="username" name="username" autocomplete="on">
                             <svg class="field-icon" width="18" height="24">
                                 <use href="/images/icons.svg#icon-person"></use>
                             </svg>
@@ -549,11 +549,26 @@
                     
                    
                     <div class="label-field-box">
-                        <input type="checkbox" id="policy" name="policy" value="true">
-                        <label for="policy">
-                            I accept the terms and conditions of the <a href="" class="modal-accent">Privacy Policy</a>
+                        <input class="policy-checkbox visually-hidden" 
+                            type="checkbox" 
+                            id="policy" 
+                            name="policy" 
+                            value="true">
+                        <label 
+                            for="policy" 
+                            class="policy-lable">
+                            <span class="custom-checkbox">
+                                <svg width="10" height="8">
+                                    <use href="/images/icons.svg#icon-check"></use>
+                                </svg>
+                            </span>
+
+                            I accept the terms and conditions of the 
+                            <a href="" class="policy-link">
+                                Privacy Policy
+                            </a>
                         </label>
-                    </div>
+                </div>
                     
                     <button class="modal-send-btn" type="submit">
                         Send

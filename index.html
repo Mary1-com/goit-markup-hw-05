@@ -484,9 +484,9 @@
            
                 <form class="footer-form">
                     <label class="footer-label" for="footeremail">
-                    <input class="footer-form-email" type="email" id="footeremail" placeholder="E-mail">
+                    <input class="footer-form-email" type="email" id="footeremail" name="footeremail" placeholder="E-mail">
                     </label>
-                    <button class="footer-btn-subscribe">
+                    <button class="footer-btn-subscribe" type="submit">
                         Subscribe
                         <svg class="footer-subscribe-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-subscribe"></use>
@@ -505,7 +505,7 @@
                 
             <button class="close-modal" type="button" data-modal-close>
                 <svg class="close-icon-close" width="8" height="8">
-                    <use href="/images/icons.svg#icon-close"></use>
+                    <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
 
@@ -517,15 +517,15 @@
             <form class="form-wrapper">
                                     
                 <div class="label-field-box">
-                    <label class="label-field" for="username">
+                    <label for="user-name" class="label-field" >
                         Name
                     </label>
                     <div class="field-wrapper">
-                        <input class="input-field" type="text" id="username" name="username" autocomplete="on">
+                        <input class="input-field" type="text" id="user-name" name="user-name" autocomplete="on">
                         <svg class="field-icon" width="18" height="24">
-                            <use href="/images/icons.svg#icon-person"></use>
+                            <use href="./images/icons.svg#icon-person"></use>
                         </svg>
-                        </div>
+                    </div>
                 </div>
 
                 <div class="label-field-box">
@@ -535,7 +535,7 @@
                     <div class="field-wrapper">
                         <input class="input-field" type="tel" id="usertel" name="usertel">
                         <svg class="field-icon" width="18" height="24">
-                            <use href="/images/icons.svg#icon-phone"></use>
+                            <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
@@ -547,35 +547,34 @@
                     <div class="field-wrapper">
                         <input class="input-field" type="email" id="useremail" name="useremail">
                         <svg class="field-icon" width="18" height="24">
-                            <use href="/images/icons.svg#icon-email"></use>
+                            <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
                 
                 <div class="label-field-box">
-                    <label class="label-field" for="comment">
+                    <label class="label-field" for="user-comment">
                         Comment
                     </label>
-                    <textarea class="comment-textarea" name="comment" id="comment" placeholder="Text input"></textarea>
+                    <textarea class="comment-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                 </div>
                 
                 
                 <div class="label-field-box">
                     <input class="policy-checkbox visually-hidden" 
                         type="checkbox" 
-                        id="policy" 
-                        name="policy" 
-                        value="true">
+                        id="user-privacy" 
+                        name="user-privacy"                        value="true">
                     <label 
-                        for="policy" 
+                        for="user-privacy"
                         class="policy-lable">
                         <span class="custom-checkbox">
                             <svg width="10" height="8">
-                                <use href="/images/icons.svg#icon-check"></use>
+                                <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>                   
                         I accept the terms and conditions of the 
-                        <a href="#" class="policy-link">
+                        <a class="policy-link" href="#">
                             Privacy Policy
                         </a>
                     </label>     
